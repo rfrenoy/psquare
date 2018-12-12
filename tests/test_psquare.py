@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from demo.psquare import PSquare
+from psquare.psquare import PSquare
 
 
 class TestPSquare(unittest.TestCase):
