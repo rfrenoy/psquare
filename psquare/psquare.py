@@ -16,6 +16,7 @@ class PSquare:
         Initiate p square models with the p value to estimate and five first observations
         :param p: the percentile to iteratively estimate
         """
+        p = p/100.0
         self.initiated = False
         self.marker_heights = np.array([])
         self.marker_positions = np.array(range(1, 6))  # marker positions are 1-based
