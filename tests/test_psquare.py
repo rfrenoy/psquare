@@ -7,7 +7,7 @@ class TestPSquare(unittest.TestCase):
 
     def init_test_psquare(self):
         obs = [1, 2, 3, 4, 5]
-        psquare = PSquare(0.5)
+        psquare = PSquare(50)
         for o in obs:
             psquare.update(o)
         return psquare
@@ -47,8 +47,8 @@ class TestPSquare(unittest.TestCase):
     def test_psquare_should_match_baseline_function(self):
         # Given
         examples = np.random.normal(loc=500, scale=100, size=1000)
-        p = 0.9
-        base_p_est = np.percentile(examples, p * 100)
+        p = 90
+        base_p_est = np.percentile(examples, p)
 
         # When
         psquare = PSquare(p)

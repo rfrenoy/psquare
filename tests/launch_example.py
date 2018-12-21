@@ -1,9 +1,7 @@
 import numpy as np
-import matplotlib.pyplot as plt
-
 from psquare.psquare import PSquare
 
-NB_ITERATIONS = 10000
+NB_ITERATIONS = 100
 
 
 def random_generator():
@@ -19,9 +17,7 @@ def main():
     quantile_to_estimate = 95
 
     psquare = PSquare(quantile_to_estimate)
-    exact_quantiles = []
     estimated_quantiles = []
-    sum_errors = []
 
     for val in values:
         psquare.update(val)
@@ -32,11 +28,6 @@ def main():
 
         psquare.update(new_val)
         estimated_quantiles.append(psquare.p_estimate())
-        exact_quantiles.append(exact_value_for_quantile(values, quantile_to_estimate))
-        sum_errors.append(np.abs(estimated_quantiles[-1] - exact_quantiles[-1]))
-
-    plt.plot(sum_errors)
-    plt.show()
 
 
 if __name__ == '__main__':
