@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='psquare',
-    version='1.0',
+    version='1.1',
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     author='Rémy Frenoy',
     author_email='rfrenoy@gmail.com',
