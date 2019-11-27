@@ -10,7 +10,7 @@ setup(
     description='This is a Python implementation of the p-square algorithm',
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://gitlab.octo.com/bdalab/psquare",
+    url="https://github.com/rfrenoy/psquare",
     install_requires=[
         'numpy'
     ],
