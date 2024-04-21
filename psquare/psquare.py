@@ -79,8 +79,7 @@ class PSquare:
             if len(self.marker_heights) == 5:
                 self.initiated = True
                 self.marker_heights = np.sort(self.marker_heights)
-            else:
-                return
+            return
 
         i = self.find_cell(new_observation)
         if i == -1:
