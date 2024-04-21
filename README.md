@@ -9,7 +9,7 @@ dealing with continuously (and fastly) incoming data.
 
 1. From sources
     ```bash
-    git clone git@gitlab.octo.com:bdalab/psquare.git
+    git clone git@github.com:rfrenoy/psquare.git
     cd psquare
     python setup.py install
     ```
